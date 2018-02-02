@@ -6,4 +6,6 @@ LABEL name="CentOS Base Image" \
     license="GPLv2" \
     build-date="20170911"
 
-CMD ["/bin/bash"]
+ADD ffmpeg.tar.gz /bin
+
+CMD ["/bin/ffmpeg"]
