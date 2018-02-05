@@ -7,5 +7,6 @@ LABEL name="CentOS Base Image" \
     build-date="20170911"
 
 ADD ffmpeg.tar.gz /bin
+CMD chown root:root /bin
 
 CMD ["/bin/ffmpeg"]
